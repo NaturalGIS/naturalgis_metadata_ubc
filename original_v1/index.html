@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Search</title>
+<link href="estilo2.css" rel="stylesheet" type="text/css" />
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+  
+  <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<script>
+  $(function() {
+    var availableTags = [
+"SAINT HELENA","ACREAGE","ALBATROSS","ARC MINUTE GRID","ARC SECOND GRID","BASINS","BATHYMETRY"," BIOLOGICAL DATA","BIRDS","BLACK RAT","BLOCKS","BROWN HARE","CAT","CATCHES","CATTLE"," CLOROPHYLL","COASTAL AREAS","COMMERCIAL CATCHES","COMMERCIAL SPECIES","CONDUCTIVITY","CONSERVATION ZONES","COTTON-TAIL RABBIT","CTD","DAILY CATCHES","DEPTH","DISCARD","DISSOLVED OXYGEN","EFFORT","ELEVATION","ERADICATION OPERATIONS","EUROPEAN RABBIT","EXPLORATION","FALKLAND ISLANDS","FERAL CAT","FISH","FISHERIES","GAS","GEOGRAPHICAL CO-ORDINATES","GEOLOGY","GOAT","GRAZING MAMMALS","GRID","GRID SYSTEM","GUANACO","HABITAT TYPES","HECTARES","HORSE","HOUSE MOUSE","HYDROCARBONS","INVASIVE SPECIES","ISLAND","ISLANDS","JIGGING","LANDOWNERS NAMES","LEASE","LONGLINING","MARINE","MARINE ARCHAEOLOGY","MORTALITY","NATIVE MAMMALS","NATIVE PLANTS","NON NATIVE PLANTS","NON-NATIVE MAMMALS","NORWAY RAT","OBSERVER PROGRAMME","OIL","PASSERINE","PATAGONIAN FOX","PENGUIN","PIG"," POLICY","PRODUCTION LICENCE AREAS","QUADRATS","REGIONAL","REINDEER","REPORT","RESEARCH PROGRAMME","SCIENTIFIC EXPEDITIONS","SEA MAMMALS","SEABIRDS","SEALS","SHEEP","SHORELINE TYPES","SKATE"," SOLID BEDROCK","SOUTH AMERICAN FUR SEAL","SOUTHERN ELEPHANT SEAL","SOUTHERN SEA LION","SQUID","STRANDED CETACEANS","STRIATED CARACARA","STRUCTURES","SUPERFICIAL DEPOSIT","TRAWLING","TUSSAC COVER","TUSSAC QUALITY","VESSELS","VMS","WATER TEMPERATURE","WELLS",
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+</head>
+<body>
+<form method="post" action="buscar.php" >
+<table border="0" cellpadding="0" cellspacing="0" align="center">
+<tr>
+<td><input type="text" name="query" id="tags" /><input type="submit" name="submit" id="search" value="Search" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html> 
